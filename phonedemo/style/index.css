@@ -1,0 +1,151 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word} 
+
+body {
+background: #fff;
+overflow-x:scroll; 
+}
+
+.container{
+cursor:pointer;
+}
+
+
+#positionButtonDiv {
+	position: fixed;
+	right:90px;
+	bottom: 130px;
+}
+
+.yuan{
+	margin:0 auto;
+	opacity: 0.7;
+	background:url('../img/pic_choce.png') no-repeat 0 -200px;
+	width: 44px;
+	height: 37px;
+}
+
+.yuan:hover{
+	background:url('../img/pic_choce.png') no-repeat -100px -200px;
+}
+
+.change{
+	margin:0 auto;
+	opacity: 0.7;
+	background:url('../img/pic_choce.png') no-repeat -200px -200px;
+	width: 44px;
+	height: 37px;
+}
+
+.change:hover{
+	background:url('../img/pic_choce.png') no-repeat -300px -200px;
+}
+
+#positionButtonDiv .positionButtonSpan img {
+	float: right
+	border: 0;
+}
+
+.positionMapClass area {
+	cursor: pointer;
+}
+
+.zoomButton {
+	border: 0;	cursor: pointer;
+}
+
+#imageFullScreen{
+	display: block;
+}
+
+
+.Map{
+	display: inline-block;
+}
+
+.topMap{
+	background: url(../img/pic_choce.png) -200px -100px;
+	opacity: 0.7;
+	width: 52px;
+	height: 29px;
+	position: absolute;
+	left: -5px;
+	top: 48px;
+}
+
+
+.topMap:hover{
+	background: url(../img/pic_choce.png) -200px 0px;
+}
+
+.leftMap{
+	background: url(../img/pic_choce.png) 0px -100px;
+	opacity: 0.7;
+	width: 29px;
+	height: 52px;
+	position: absolute;
+	left: -18px;
+	top: 61px;
+}
+
+.leftMap:hover{
+	background: url(../img/pic_choce.png) 0px 0px;
+}
+
+.rightMap{
+	background: url(../img/pic_choce.png) -100px -100px;
+	opacity: 0.7;
+	width: 29px;
+	height: 52px;
+	position: absolute;
+	left: 32px;
+	top: 61px;
+}
+
+.rightMap:hover{
+	background: url(../img/pic_choce.png) -100px 0px;
+}
+
+.bottomMap{
+	background: url(../img/pic_choce.png) -300px -100px;
+	opacity: 0.7;
+	width: 52px;
+	height: 29px;
+	position: absolute;
+	left: -5px;
+	top: 98px;
+}
+
+.bottomMap:hover{
+	background: url(../img/pic_choce.png) -300px 0px;
+}
+
+
+/*pc端 以600px为界限*/
+@media screen and (min-width: 600px){
+	.pc_end{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+}
+
+/*phone端 以600px为界限*/
+@media screen and (max-width: 600px){
+	.pc_end{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+
