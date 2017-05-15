@@ -14,9 +14,13 @@ overflow-x:scroll;
 }
 
 .container{
-cursor:pointer;
+	display: block;
+	cursor:pointer,auto;
 }
 
+.container:active{
+	cursor:url(../img/xiao.png),auto;
+}
 
 #positionButtonDiv {
 	position: fixed;
@@ -129,23 +133,28 @@ cursor:pointer;
 
 
 /*pc端 以600px为界限*/
-@media screen and (min-width: 600px){
+/*@media screen and (min-width: 720px){
 	.pc_end{
 		display: block;
 	}
 	.mobile{
 		display: none;
 	}
-}
+}*/
 
 /*phone端 以600px为界限*/
-@media screen and (max-width: 600px){
+/*@media screen and (max-width: 720px){
 	.pc_end{
 		display: none;
 	}
 	.mobile{
 		display: block;
 	}
-}
-
+}*/
+	.pc_end{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
 

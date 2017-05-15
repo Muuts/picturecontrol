@@ -82,14 +82,19 @@
         var draggie = divs.data('draggabilly')
 
         $draggable.on( 'dragStart', function( event, pointer ) {
+
                 var disX = event.clientX + $(document).scrollLeft();
                 var disY = event.clientY + $(document).scrollTop();
-                $draggable.on( 'dragMove', function( event, pointer, moveVector ) {
+                $draggable.on('dragMove', function( event, pointer, moveVector ) {
                     /*通过总值不变，而点击的位置变化来实现，滚动条的滚动*/
                        $(document).scrollLeft(disX - event.clientX);
                        $(document).scrollTop(disY - event.clientY);
                     }) 
-            })    
+            })   
+
+        $draggable.on( 'dragEnd', function( event, pointer ) {
+            console.log('aa');
+        }) 
 
         /*刷新页面时，重调比例*/
         $(window).resize(function() {
@@ -194,7 +199,18 @@
             //         Tosize(-880); 
             //        $('.imgcontent').width(img.width());   
             //     }  
-            // }  
+            // } 
+
+             if(IsPC()===true){
+                   $('.pc_end').show();
+                   $('.mobile').hide();
+                   
+            }else{
+               $('.pc_end').hide();
+                   $('.mobile').show();
+            }
+
+
     
     });
 
