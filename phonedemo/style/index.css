@@ -15,11 +15,11 @@ overflow-x:scroll;
 
 .container{
 	display: block;
-	cursor:pointer,auto;
+	cursor:url(../img/pic_view_cur3.cur),auto;
 }
 
 .container:active{
-	cursor:url(../img/xiao.png),auto;
+	cursor:url(../img/pic_view_cur4.cur),auto;
 }
 
 #positionButtonDiv {
@@ -30,7 +30,7 @@ overflow-x:scroll;
 
 .yuan{
 	margin:0 auto;
-	opacity: 0.7;
+	opacity: 0.9;
 	background:url('../img/pic_choce.png') no-repeat 0 -200px;
 	width: 44px;
 	height: 37px;
@@ -38,6 +38,7 @@ overflow-x:scroll;
 
 .yuan:hover{
 	background:url('../img/pic_choce.png') no-repeat -100px -200px;
+	cursor: pointer;
 }
 
 .change{
@@ -50,6 +51,7 @@ overflow-x:scroll;
 
 .change:hover{
 	background:url('../img/pic_choce.png') no-repeat -300px -200px;
+	cursor: pointer;
 }
 
 #positionButtonDiv .positionButtonSpan img {
@@ -72,6 +74,7 @@ overflow-x:scroll;
 
 .Map{
 	display: inline-block;
+	cursor: pointer;
 }
 
 .topMap{
